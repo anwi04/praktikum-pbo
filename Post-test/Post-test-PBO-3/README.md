@@ -181,7 +181,7 @@ Pengujian yang dilakukan:
 ![Output 3](screenshot_3.png)
 
 <details>
-<summary>Output teks lengkap (referensi)</summary>
+<summary>Output Lengkap</summary>
 
 ```
 === BUKTI ABSTRAKSI: ABSTRACT CLASS TIDAK BISA DIINSTANSIASI ===
