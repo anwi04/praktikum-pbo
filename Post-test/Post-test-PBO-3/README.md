@@ -151,7 +151,7 @@ Program tidak membedakan perilaku objek dengan `if/elif` yang mengecek `type()` 
 - **Class method**: `ubah_nama_toko()` dan `ubah_status_default()`
 - **Static method**: `validasi_harga()` dan `validasi_jumlah()`
 
-## 8. Nilai Plus: Penerapan SOLID
+## 8.Penerapan SOLID
 
 1. **OCP (Open/Closed Principle)**: Produk baru cukup dibuat sebagai subclass baru dari `ProdukKpop`, dan metode pembayaran baru cukup dibuat sebagai kelas baru yang punya `bayar()`. Kode lama (`Katalog`, `Pesanan`, `proses_pembayaran()`, loop program utama) tidak perlu diubah. Lokasi: `ProdukKpop` beserta subclass dan `proses_pembayaran()`.
 2. **DIP (Dependency Inversion Principle) lewat dependency injection**: `Pesanan.bayar(metode)` tidak membuat objek pembayaran sendiri. Metode pembayaran dikirim dari luar, jadi `Pesanan` hanya bergantung pada sesuatu yang punya `bayar()`, bukan pada `TransferBank`, `EWallet`, atau `COD` secara langsung. Lokasi: method `Pesanan.bayar()`.
